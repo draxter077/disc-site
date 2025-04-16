@@ -6,8 +6,7 @@ export default function audioplay(){
             padding:10px;
             background:rgb(255,128,128);
             border-radius:50%;
-            transition:box-shadow var(--transitionTime);
-            transition:opacity var(--transitionTime);
+            transition:box-shadow var(--transitionTime), opacity var(--transitionTime);
         }
         :hover{
             box-shadow:0px 0px 10px 0px var(--colorWhite);
@@ -21,9 +20,10 @@ export default function audioplay(){
         function a(e){
             let audio = cE("audio", style);
             audio.src = "./assets/fineline.mp3";
-            audio.play();
+            document.getElementById("tonearm").style = "animation:getIn 2s ease 0s 1 forwards;"
             audioplay.style.opacity = 0
-            e.target.parentElement.parentElement.children[0].style = "animation:rotate 50s linear 0s infinite forwards;"
+            document.getElementById("disc").style = "animation:rotate 50s linear 2s infinite forwards;"
+            audio.play();
         },
         {once:true}
     )
