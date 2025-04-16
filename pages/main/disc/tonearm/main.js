@@ -8,7 +8,8 @@ export default function tonearm(){
             transform:rotate(-50deg);
         }
         @keyframes getIn{
-            100%[right:-30%;transform:rotate(-30deg)]
+            0%[right:-40%;transform:rotate(-50deg);]
+            100%[right:-30%;transform:rotate(-30deg);]
         }`
 
     const tonearm = cE("img", style)

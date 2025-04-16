@@ -125,11 +125,10 @@ window.construct = function construct(p){
     if(p == undefined){
         if(window.location.href.split("br/")[1] != undefined && window.location.href.split("br/")[1] != ""){
             let paths = window.location.href.split("br/")[1].split("/")
-            //if(paths[0] == "teste"){}
-            root.innerHTML = paths
+            root.appendChild(main(paths[0]))
         }
         else{
-            root.appendChild(main())
+            root.appendChild(main("fineline"))
         }
     }
 }

@@ -7,6 +7,7 @@ export default function icon(){
         }`
 
     const icon = cE("img", style)
+    icon.id = "icon"
     icon.src = "./assets/play.png"
     return(icon)
 }

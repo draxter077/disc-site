@@ -1,7 +1,8 @@
 import disc from "./disc/main.js"
 import audioplay from "./audioplay/main.js"
+import menu from "./menu/main.js"
 
-export default function main(){
+export default function main(m){
     let style = `
         {
             display:flex;
@@ -15,6 +16,7 @@ export default function main(){
 
     const main = cE("div", style)
     main.appendChild(disc())
-    main.appendChild(audioplay())
+    main.appendChild(audioplay(m))
+    main.appendChild(menu())
     return(main)
 }
