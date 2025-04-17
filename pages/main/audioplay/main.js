@@ -6,6 +6,10 @@ export default function audioplay(m){
             padding:15px;
             background:var(--secundaryColor);
             border-radius:100px;
+            transition:transform var(--transitionTime);
+        }
+        :hover{
+            transform:scale(1.1);
         }`
 
     const audioplay = cE("button", style)

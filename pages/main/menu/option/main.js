@@ -4,13 +4,13 @@ export default function option(t, m){
             font-size:20px;
             padding:10px;
             border-radius:5px;
-            border:3px solid var(--${t.replaceAll(" ", "").toLowerCase() == m ? "secundaryColor" : "colorWhite"});
+            border:3px ${t.replaceAll(" ", "").toLowerCase() == m ? "dashed" : "solid"} var(--secundaryColor);
             margin:5px;
             color:white;
             transition:border var(--transitionTime);
         }
         :hover{
-            border:3px solid var(--secundaryColor);
+            border:3px dashed var(--secundaryColor);
         }`
 
     const option = cE("button", style)
