@@ -8,6 +8,9 @@ export default function menu(m){
             justify-content:center;
             width:100%;
             margin:20px 0px 0px 0px;
+        }
+        :responsive{
+            flex-wrap:wrap;
         }`
 
     const menu = cE("div", style)

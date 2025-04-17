@@ -17,12 +17,13 @@ export default function audioplay(m){
 
     audioplay.addEventListener(
         "click",
-        function a(e){
+        async function a(e){
             if(document.getElementById("disc").style.animationPlayState == "paused"){
                 document.getElementById("icon").src = "./assets/pause.png"
                 document.getElementById("icon").style = "padding:5px;"
                 document.getElementById("tonearm").style = "animation:getIn 2s ease 0s 1 forwards;"
                 document.getElementById("disc").style.animationPlayState = "running"
+                if(audio.currentTime == 0){await new Promise(resolve => setTimeout(resolve, 2000))}
                 audio.play()
             }
             else{
