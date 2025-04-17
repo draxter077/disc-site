@@ -4,7 +4,7 @@ export default function img(m){
             width:100%;
             height:100%;
             border-radius:50%;
-            border:5px solid var(--colorBlack);
+            border:5px solid var(--secundaryColor);
             transition:transform var(--transitionTime);
             animation:rotate 50s linear 2s infinite forwards;
         }`
