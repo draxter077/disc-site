@@ -9,7 +9,7 @@ export default function tonearm(){
         }
         @keyframes getIn{
             0%[right:-40%;transform:rotate(-50deg);]
-            100%[right:-30%;transform:rotate(-30deg);]
+            100%[right:-32%;transform:rotate(-35deg);]
         }`
 
     const tonearm = cE("img", style)
