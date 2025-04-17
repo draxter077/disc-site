@@ -4,7 +4,7 @@ export default function audioplay(m){
     let style = `
         {
             padding:15px;
-            background:rgb(255,128,128);
+            background:var(--secundaryColor);
             border-radius:100px;
         }`
 

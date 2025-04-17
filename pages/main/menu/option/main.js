@@ -1,16 +1,16 @@
-export default function option(t){
+export default function option(t, m){
     let style = `
         {
             font-size:20px;
             padding:10px;
             border-radius:5px;
-            border:1px solid var(--colorWhite);
+            border:3px solid var(--${t.replaceAll(" ", "").toLowerCase() == m ? "secundaryColor" : "colorWhite"});
             margin:5px;
             color:white;
             transition:border var(--transitionTime);
         }
         :hover{
-            border:1px solid rgb(255,128,128);
+            border:3px solid var(--secundaryColor);
         }`
 
     const option = cE("button", style)

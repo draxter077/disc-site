@@ -1,7 +1,7 @@
 import img from "./img/main.js"
 import tonearm from "./tonearm/main.js"
 
-export default function disc(){
+export default function disc(m){
     let style = `
         {
             position:relative;
@@ -18,7 +18,7 @@ export default function disc(){
         }`
 
     const disc = cE("div", style)
-    disc.appendChild(img())
+    disc.appendChild(img(m))
     disc.appendChild(tonearm())
     return(disc)
 }

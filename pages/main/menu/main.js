@@ -1,6 +1,6 @@
 import option from "./option/main.js"
 
-export default function menu(){
+export default function menu(m){
     let style = `
         {
             display:flex;
@@ -11,9 +11,9 @@ export default function menu(){
         }`
 
     const menu = cE("div", style)
-    let ns = ["Fine Line"]
+    let ns = ["Fine Line", "Cherry", "Fireproof", "Little Things", "Never Let You Go", "Mystery of Love"]
     for(let n = 0; n < ns.length; n++){
-        menu.appendChild(option(ns[n]))
+        menu.appendChild(option(ns[n], m))
     }
     return(menu)
 }
